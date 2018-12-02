@@ -1,6 +1,6 @@
 FROM centos:7
 
-LABEL maintainer "29ygq@sina.com"
+LABEL maintainer "zippenwang@foxmail.com"
 
 ENV FASTDFS_PATH=/opt/fdfs \
     FASTDFS_BASE_PATH=/var/fdfs \
@@ -8,7 +8,8 @@ ENV FASTDFS_PATH=/opt/fdfs \
     TENGINE_VERSION="2.2.2" \
     PORT= \
     GROUP_NAME= \
-    TRACKER_SERVER=
+    TRACKER_SERVER= \
+    NGINX_PORT=
 
 #get all the dependences and nginx
 RUN yum install -y git gcc make wget pcre pcre-devel openssl openssl-devel \
